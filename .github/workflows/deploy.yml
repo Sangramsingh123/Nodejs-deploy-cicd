@@ -19,6 +19,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: sangram
           key: ${{ secrets.SSH_KEY }}
+          port: 22
           script: |
             cd /var/www/html/ReactLearnProject/Nodejsdeplloycicd/Nodejs-deploy-cicd
             git pull
