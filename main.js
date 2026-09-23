@@ -1,7 +1,7 @@
 const express=require('express');
 const dotenv=require('dotenv');
 dotenv.config();
-const Port= process.env.Port || 8080
+const Port= process.env.Port || 3436
 
 
 const app=express();
@@ -13,5 +13,5 @@ app.get('/testing',(req,res)=>{
 
 
 app.listen(Port,()=>{
-console.log("http://localhost:8080")
+console.log("http://localhost:3436")
 })
